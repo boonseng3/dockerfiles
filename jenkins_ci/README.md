@@ -22,3 +22,13 @@ Build the image
 Start a container
 
     docker run --name myjenkins --link cme-sql:mysql -p 8080:8080 -p 50000:50000 -v $JENKINS_VOLUME:/var/jenkins_home jenkins_ci
+
+
+Setup
+---------------
+
+1. After the Jenkins is fully running, take note of the default adminstrator password.
+1. Install the recommend list of plugins, it will finish immediately because it has already been installed.
+1. Setup the administrator account.
+1. Set up the maven location in Tool configuration.
+1. Set up the SSH credentials for Git.
